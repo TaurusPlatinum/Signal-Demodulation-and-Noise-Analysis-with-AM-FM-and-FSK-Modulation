@@ -1,44 +1,44 @@
-# Signal Demodulator Robustness Analysis under Varying Noise Conditions (AM, FM, FSK)
+# Signal Demodulation and Noise Impact Analysis with AM, FM, and FSK Modulation
+
+![Demodulated Signals Visualization](docs/1.png)
 
 ## Project Overview
 
-This project simulates the robustness of signal demodulators for Amplitude Modulation (AM), Frequency Modulation (FM), and Frequency Shift Keying (FSK) under varying Signal-to-Noise Ratios (SNR). Leveraging **Python's NumPy** and **Matplotlib**, the program models noisy communication channels, demodulates signals, and quantitatively evaluates the Bit Error Rate (BER) as a function of noise level.
+This project simulates signal generation, noise addition, and demodulation processes for three fundamental modulation schemes:  
+- **Amplitude Modulation (AM)**  
+- **Frequency Modulation (FM)**  
+- **Frequency Shift Keying (FSK)**  
+
+Using Python’s **NumPy** and **Matplotlib**, it models communication signals under realistic noisy conditions, then applies demodulation techniques to recover the original data. The resulting visualizations enable qualitative assessment of demodulation effectiveness in the presence of noise.
 
 ---
 
-## Business & Analytical Value
+## Business and Analytical Value
 
-Reliable communication in noisy environments is critical for sectors such as:
+Signal demodulation and noise resilience analysis are critical in:  
+- Designing and optimizing **wireless communication systems**  
+- Enhancing **IoT sensor data transmission** reliability  
+- Improving **telecommunication network performance monitoring**  
+- Supporting **R&D in digital signal processing** and hardware testing  
 
-- Telecommunications and wireless networks  
-- Internet of Things (IoT) devices  
-- Quality assurance in signal processing systems  
-- Research and development of modulation schemes
-
-This analysis provides actionable insights for selecting modulation methods that optimize error resilience, thereby improving system reliability and user experience.
+This project provides foundational insights that assist engineers and analysts in evaluating and improving signal integrity under real-world interference.
 
 ---
 
 ## Technical Highlights
 
-- **Signal generation:** Binary sequences modulated using AM, FM, and FSK techniques  
-- **Noise modeling:** Addition of Gaussian noise across a range of SNR values (0 to 14 dB)  
-- **Demodulation methods:** Envelope detection for AM, phase unwrapping for FM, correlation approach for FSK  
-- **Performance evaluation:** Bit Error Rate (BER) computed to measure demodulator error probability  
-- **Visualization:** Log-scale BER vs. SNR plots to clearly demonstrate noise impact  
+- **Signal Generation:** Binary data encoded into AM, FM, and FSK waveforms.  
+- **Noise Modeling:** Additive white Gaussian noise applied with adjustable Signal-to-Noise Ratio (SNR).  
+- **Demodulation Methods:**  
+  - Envelope detection for AM signals  
+  - Phase derivative analysis for FM  
+  - Correlation-based detection for FSK  
+- **Visualization:** Time-domain plots illustrate raw and demodulated signals for intuitive analysis.
 
 ---
 
-## Visualization Example
-
-![Demodulator Robustness Curve](docs/1.png)
-
-*Bit Error Rate (BER) decreases as Signal-to-Noise Ratio (SNR) increases, demonstrating the noise resilience of AM, FM, and FSK demodulators.*
-
----
-
-## Tools & Technologies
+## Tools and Technologies
 
 - Python 3.x  
-- NumPy for numerical signal processing  
-- Matplotlib for data visualization and plotting  
+- NumPy — numerical computations and signal modeling  
+- Matplotlib — data visualization  я
